@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansoor Furniture</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo-container">
+  <img src="logo1.png" class="logo-img active" alt="Mansoor Furniture Logo 1">
+  <img src="logo2.png" class="logo-img" alt="Mansoor Furniture Logo 2">
+</div>
+
+
+  <div class="search">
+    <input type="text" placeholder="What are you looking for?">
+  </div>
+
+  <div class="icons">
+
+  <div class="icon-item">
+    <i class="fa-regular fa-user"></i>
+    <span class="icon-text">Profile</span>
+  </div>
+
+  <div class="icon-item wishlist">
+    <i class="fa-regular fa-heart"></i>
+    <span class="count" id="wishlistCount">0</span>
+    <span class="icon-text">Wishlist</span>
+  </div>
+
+</div>
+
+
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <ul class="menu">
+    <li class="dropdown mega-dropdown">
+  Furniture
+
+  <div class="mega-menu">
+
+    <!-- LEFT COLUMN -->
+    <ul class="mega-left">
+  <li data-panel="living">Living Room Furniture</li>
+  <li data-panel="dining">Dining & Kitchen Furniture</li>
+  <li data-panel="bedroom">Bedroom Furniture</li>
+  <li>Shoe Racks</li>
+  <li>Mattresses</li>
+  <li>Kids Furniture</li>
+</ul>
+
+<!-- RIGHT COLUMN -->
+<div class="mega-right">
+
+  <ul class="mega-panel living">
+    <li>Sofas</li>
+    <li>Loungers</li>
+    <li>Recliners</li>
+    <li>Accent Chairs</li>
+    <li>Center Tables</li>
+    <li>End Tables</li>
+    <li>TV Units</li>
+    <li>Storage Cabinets</li>
+  </ul>
+
+  <ul class="mega-panel dining">
+    <li>Dining Tables</li>
+    <li>Dining Chairs</li>
+    <li>Bar Furniture</li>
+  </ul>
+
+  <ul class="mega-panel bedroom">
+    <li>Beds</li>
+    <li>Wardrobes</li>
+    <li>Side Tables</li>
+  </ul>
+
+</div>
+
+</li>
+
+    <li class="dropdown">Kitchen & Dining
+      <ul class="dropdown-menu">
+        <li>Cookware</li>
+        <li>Dinnerware</li>
+        <li>Storage</li>
+      </ul>
+    </li>
+
+    <li class="dropdown">Home Decor
+      <ul class="dropdown-menu">
+        <li>Wall Decor</li>
+        <li>Clocks</li>
+        <li>Candles</li>
+      </ul>
+    </li>
+
+    <li class="dropdown">Home Furnishing
+      <ul class="dropdown-menu">
+        <li>Curtains</li>
+        <li>Cushions</li>
+        <li>Bed Linen</li>
+      </ul>
+    </li>
+
+    <li class="dropdown">Interiors
+      <ul class="dropdown-menu">
+        <li>Modular Kitchen</li>
+        <li>Wardrobes</li>
+        <li>Full Home</li>
+      </ul>
+    </li>
+
+    <li class="sale">Clearance Sale</li>
+  </ul>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <div class="hero-slide active"></div>
+  <div class="hero-slide"></div>
+  <div class="hero-slide"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Design Your Dream Home</h1>
+    <p>Premium furniture & interiors made for modern living</p>
+
+    <div class="hero-buttons">
+      <button class="btn primary">Shop Now</button>
+      <button class="btn secondary">Explore Interiors</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POPULAR CATEGORIES (PLACEHOLDER) ================= -->
+<section class="popular-categories">
+  <h2>Popular <span>Categories</span></h2>
+
+  <!-- Placeholder content -->
+  <div class="category-placeholder">
+    <p>Categories will be added soon</p>
+  </div>
+</section>
+
+<!-- ================= OPTIONAL SLIDESHOW (REMOVE IF USING HERO ONLY) ================= -->
+<!--
+<section class="slideshow">
+  <img src="slide1.jpg" class="slide active">
+  <img src="slide2.jpg" class="slide">
+  <img src="slide3.jpg" class="slide">
+</section>
+-->
+
+<script src="script.js"></script>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <!-- TOP FOOTER -->
+  <div class="footer-top">
+
+    <!-- LOGO & SOCIAL -->
+    <div class="footer-brand">
+      <img src="logo1.png" alt="Mansoor Furniture Logo">
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+
+    <!-- CUSTOMER SERVICE -->
+    <div class="footer-column">
+      <h4>Customer Service</h4>
+      <ul>
+        <li>Cancellation Policy</li>
+        <li>Service Assurance / Warranty</li>
+        <li>FAQ</li>
+        <li>Terms & Conditions</li>
+      </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-column">
+      <h4>About Mansoor Furniture</h4>
+      <ul>
+        <li>About Us</li>
+        <li>Blogs</li>
+        <li>Corporate Website</li>
+        <li>Store Locator</li>
+        <li>Sitemap</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <ul class="contact-list">
+        <li><i class="fa-regular fa-envelope"></i> care@mansoorfurniture.in</li>
+        <li><i class="fa-solid fa-phone"></i> 08069252525 (10AM – 9PM)</li>
+        <li><i class="fa-solid fa-location-dot"></i> Store Locator</li>
+      </ul>
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <div class="footer-subscribe">
+      <h4>Subscribe Now!</h4>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Your email address">
+        <button>Subscribe</button>
+      </div>
+      <p>Join our VIP list for inspiration, new arrivals and more.</p>
+    </div>
+
+  </div>
+
+  <!-- LOCATIONS -->
+  <div class="footer-locations">
+    <h4>Locations</h4>
+    <p>
+       |BARWANI (M.P)|
+    </p>
+  </div>
+
+</footer>
+
+</body>
+</html>
