@@ -290,13 +290,13 @@ ul, li {
 }
 
 .hero-content h1 {
-  font-size: 52px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 
 .hero-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 18px;
 }
 
 /* Buttons */
@@ -591,6 +591,54 @@ body.login-page {
     width: 90%;
   }
 }
+/* ================= LOGIN PAGE (FINAL, SINGLE SOURCE) ================= */
 
+.login-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;   /* space below header */
+}
 
+.login-container {
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+}
 
+.login-container form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #f3f3f3;
+  border: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #d95c5c;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.login-container .create {
+  display: inline-block;
+  margin-top: 25px;
+  font-weight: bold;
+}

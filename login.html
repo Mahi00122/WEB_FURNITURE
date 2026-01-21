@@ -2,32 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Mansoor Furniture</title>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="login-page">
 
-<div class="login-container">
-  <h1>Login</h1>
-  <p class="subtitle">If you have an account with us, please log in.</p>
+<body>
 
-  <form id="loginForm">
-    <label>Email</label>
-    <input type="email" id="email" placeholder="Email" required>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo-container">
+  <a href="index.html">
+    <img src="logo1.png" class="logo-img active" alt="Mansoor Furniture Logo 1">
+    <img src="logo2.png" class="logo-img" alt="Mansoor Furniture Logo 2">
+  </a>
+</div>
 
-    <label>Password</label>
-    <input type="password" id="password" placeholder="Password" required>
 
-    <a href="#" class="forgot">Forgot Your Password?</a>
+  <div class="search">
+    <input type="text" placeholder="What are you looking for?">
+  </div>
 
-    <button type="submit">Sign In</button>
-  </form>
+  <div class="icons">
+    <a href="login.html" class="icon-item">
+      <i class="fa-regular fa-user"></i>
+      <span class="icon-text">Profile</span>
+    </a>
 
-  <a href="#" class="create">Create Account</a>
+    <div class="icon-item wishlist">
+      <i class="fa-regular fa-heart"></i>
+      <span class="count" id="wishlistCount">0</span>
+      <span class="icon-text">Wishlist</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <ul class="menu">
+    <li>Furniture</li>
+    <li>Kitchen & Dining</li>
+    <li>Home Decor</li>
+    <li>Home Furnishing</li>
+    <li>Interiors</li>
+    <li class="sale">Clearance Sale</li>
+  </ul>
+</nav>
+
+<!-- ================= LOGIN SECTION ================= -->
+<div class="login-page">
+  <div class="login-container">
+
+    <h1>Login</h1>
+    <p class="subtitle">If you have an account with us, please log in.</p>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <a href="#" class="forgot">Forgot Your Password?</a>
+
+      <button type="submit">Sign In</button>
+    </form>
+
+    <a href="#" class="create">Create Account</a>
+
+  </div>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
 
-
+<script src="script.js"></script>
+</body>
+</html>
