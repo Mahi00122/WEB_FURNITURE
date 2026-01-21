@@ -42,3 +42,16 @@ setInterval(() => {
   logoIndex = (logoIndex + 1) % logos.length;
   logos[logoIndex].classList.add("active");
 }, 3000);
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (email === "test@gmail.com" && password === "123456") {
+    alert("Login successful");
+  } else {
+    alert("Invalid email or password");
+  }
+});
+
