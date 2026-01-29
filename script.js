@@ -54,4 +54,61 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     alert("Invalid email or password");
   }
 });
+const roomInput = document.getElementById("roomImage");
+const furnitureInput = document.getElementById("furnitureImage");
+const generateBtn = document.getElementById("generateBtn");
+const previewArea = document.getElementById("previewArea");
+
+let roomFile = null;
+let furnitureFile = null;
+
+// Utility: preview image
+function previewImage(file, label) {
+  const reader = new FileReader();
+
+  reader.onload = () => {
+    const img = document.createElement("img");
+    img.src = reader.result;
+    img.alt = label;
+    img.style.maxWidth = "300px";
+    img.style.margin = "10px";
+    img.style.borderRadius = "12px";
+
+    previewArea.appendChild(img);
+  };
+
+  reader.readAsDataURL(file);
+}
+
+// Clear preview
+function resetPreview() {
+  previewArea.innerHTML = "";
+}
+
+// Enable button only if both images exist
+function toggleButton() {
+  generateBtn.disabled = !(roomFile && furnitureFile);
+}
+
+// Room image upload
+roomInput.addEventListener("change", (e) => {
+  roomFile = e.target.files[0];
+  resetPreview();
+  if (roomFile) previewImage(roomFile, "Room Image");
+  toggleButton();
+});
+
+// Furniture image upload
+furnitureInput.addEventListener("change", (e) => {
+  furnitureFile = e.target.files[0];
+  resetPreview();
+  if (roomFile) previewImage(roomFile, "Room Image");
+  if (furnitureFile) previewImage(furnitureFile, "Furniture Image");
+  toggleButton();
+});
+
+// Button click (for now just test flow)
+generateBtn.addEventListener("click", () => {
+  alert("Images ready. Next step: Firebase upload.");
+});
 

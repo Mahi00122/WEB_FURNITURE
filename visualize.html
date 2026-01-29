@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualize Furniture | Mansoor Furniture</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER (REUSED) ================= -->
+<header class="header">
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="logo1.png" class="logo-img active" alt="Mansoor Furniture">
+      <img src="logo2.png" class="logo-img" alt="Mansoor Furniture">
+    </a>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="What are you looking for?">
+  </div>
+
+  <div class="icons">
+    <a href="login.html" class="icon-item">
+      <i class="fa-regular fa-user"></i>
+      <span class="icon-text">Profile</span>
+    </a>
+
+    <div class="icon-item wishlist">
+      <i class="fa-regular fa-heart"></i>
+      <span class="count">0</span>
+      <span class="icon-text">Wishlist</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= VISUALIZER SECTION ================= -->
+<section class="visualizer">
+
+  <h1>Visualize Furniture in Your Room</h1>
+  <p>Upload your room and furniture image to see how it looks before buying.</p>
+
+  <div class="visualizer-grid">
+
+    <!-- Room Upload -->
+    <div class="upload-box">
+      <h3>Upload Room Image</h3>
+      <input type="file" id="roomImage" accept="image/*">
+      <img id="roomPreview" class="preview">
+    </div>
+
+    <!-- Furniture Upload -->
+    <div class="upload-box">
+      <h3>Upload Furniture Image</h3>
+      <input type="file" id="furnitureImage" accept="image/*">
+      <img id="furniturePreview" class="preview">
+    </div>
+
+  </div>
+
+  <button class="generate-btn" id="generateBtn">
+  Generate Preview
+  </button>
+
+
+  <!-- Result -->
+  <div class="result-box">
+    <h3>Preview Result</h3>
+    <img id="resultImage">
+  </div>
+
+</section>
+
+<script src="visualize.js"></script>
+</body>
+</html>
