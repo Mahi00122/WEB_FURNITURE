@@ -1,3 +1,4 @@
+# jenkins url -- http://localhost:8080
 from flask import Flask, request, send_file
 from flask_cors import CORS
 from PIL import Image
