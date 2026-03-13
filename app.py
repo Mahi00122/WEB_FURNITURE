@@ -6,6 +6,7 @@ import os, uuid, io
 
 app = Flask(__name__)
 CORS(app)  # allow all origins
+# url for ngrok
 
 
 # ------------------------------------------------------------------ #
